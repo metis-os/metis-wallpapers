@@ -1,0 +1,119 @@
+@font-face {
+    font-family: hacker;
+    src: url("https://metislinux.org/assets/fonts/hacker.ttf");
+}
+@font-face {
+  font-family: iosevka;
+  src: url("https://metislinux.org/assets/fonts/iosevka-regular.ttf");
+}
+@font-face {
+    font-family: mokoto;
+    src: url("https://metislinux.org/assets/fonts/Mokoto\ Glitch\ Mark.ttf");
+}
+body {
+  background-color: #282828;
+  font-family: iosevka, monospace;
+  color: #ebdbb2;
+  font-size: 14pt;
+  margin: 0 auto;
+  text-align: center;
+}
+.body {
+    margin: 5%;
+}
+hr {
+  color: #c4ebb2;
+}
+div {
+  padding: 10px;
+}
+h1, h2 {
+    font-family: mokoto,monospace;
+    color: red;
+    text-shadow: 2px 2px 5px black
+}
+h3, h5, h6 {
+  font-family: hacker, monospace;
+  color: aqua;
+}
+h4 {
+  font-family: hacker, monospace;
+  color: rgb(255, 254, 195);
+  text-shadow: #4c5746 2px 2px 1px;
+}
+img.image {
+  border: 1px transparent;
+  border-radius: 7px;
+}
+img.image:hover {
+  filter: drop-shadow(0 0 .65rem rgb(141,156,149));
+}
+a {
+    font-size: 16pt;
+    text-decoration: none;
+    color: #fabd2f;
+}
+.plink {
+    font-size: 14pt;
+}
+a:hover, a:active {
+  color: #e4cb8d;
+  font-weight: bold;
+}
+a.currentpage {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+p.pages a {
+  padding: 0 15px 15px 15px;
+  display: inline-block;
+}
+.home a {
+    padding: 5%;
+    margin: 5%;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.downloadmain {
+  text-align: left;
+}
+pre {
+  background: #141414;
+  padding: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+code {
+  font-size: 0.98rem;
+  color: #ffd700;
+}
+@media only screen and (max-device-width: 620px), (max-width: 620px) {
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    font-size: larger;
+  }
+  .main div {
+    flex: 31%;
+    padding: 4px;
+  }
+  img {
+    width: 200px;
+  }
+}
+@media only screen and (max-device-width: 420px), (max-width: 420px) {
+  .main div {
+    flex: 48%;
+    padding: 4px;
+  }
+}
