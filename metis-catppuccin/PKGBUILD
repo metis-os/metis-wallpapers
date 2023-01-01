@@ -1,0 +1,25 @@
+# Maintainer: Metis Linux <info@metislinux.org>
+
+pkgname=metis-catppuccin
+pkgver=0.0
+pkgrel=1
+pkgdesc="catppuccin wallpapers for metis-os"
+url="https://github.com/metis-os/metis-wallpapers"
+arch=('any')
+license=('GPL3')
+makedepends=()
+depends=()
+conflicts=()
+groups=(metis-wallpapers)
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+
+prepare() {
+    cp -af ../files/. ${srcdir}
+}
+
+package() {
+	local _bgdir=${pkgdir}/usr/share/backgrounds/metis-catppuccin
+	mkdir -p "$_bgdir"
+	cp -r ${srcdir}/* "$_bgdir"
+}
