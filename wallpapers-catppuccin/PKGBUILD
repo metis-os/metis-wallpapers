@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="catppuccin wallpapers for metis-os"
 url="https://github.com/metis-os/metis-wallpapers"
 arch=('any')
-license=('GPL3')
+license=('MIT')
 makedepends=()
 depends=()
 conflicts=()
@@ -19,7 +19,7 @@ prepare() {
 }
 
 package() {
-	local _bgdir=${pkgdir}/usr/share/backgrounds/metis-catppuccin
+	local _bgdir=${pkgdir}/usr/share/backgrounds/wallpaper-catppuccin
 	mkdir -p "$_bgdir"
 	cp -r ${srcdir}/* "$_bgdir"
 }
