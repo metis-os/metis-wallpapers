@@ -1,6 +1,6 @@
 # Maintainer: Metis Linux <info@metislinux.org>
 
-pkgname=metis-catppuccin
+pkgname=metis-wallpapers-catppuccin
 pkgver=0.0
 pkgrel=1
 pkgdesc="catppuccin wallpapers for metis-os"
